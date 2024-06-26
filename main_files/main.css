@@ -1,23 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
-a {
+body{
+    font-family: "Francois One", sans-serif;
+    background-color: rgb(14, 12, 12);
+    color: white;
+}
+a{
     text-decoration: none;
     color: white;
 }
-
-li {
-    list-style: none;
-}
-
-.header {
-    font-family: "Francois One", sans-serif;
+.header{
+    font-family: "Oswald", sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,60 +24,183 @@ li {
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 1000; /* Ensure header stays above other content */
-    background-color: rgb(32, 31, 31); /* Add background color if needed */
-}
+    z-index: 1000; 
+    background-color: rgb(29, 29, 29);
 
-.navigation-bar {
+    
+}
+.navigation-bar{
     display: flex;
     gap: 40px;
     font-size: 1.5rem;
     font-weight: bold;
 }
-
-.logo {
-    font-size: 2.2rem;
+.logo{
     font-weight: bold;
-    border: 5px solid white;
-    padding: 5px 10px;
+    font-size: 2.5rem;
+    border:5px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
 }
 
-.main {
-    width: 100vw;
-    height: 100vh;
-    color: white;
-    background-color: black;
-    margin-top: 80px; /* Adjust for fixed header */
-}
+/* Main Content Styling */
+.mainContent{
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    margin-top: 80px;
+    border: 3px solid orangered;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    margin-top: 10%;
+    
 
-.main-index {
+}
+.heroContent img{
+    width: 30%;
+    height: 30%;
+}
+.heroContent h1{
+    margin-top: 8%;
+}
+.heroContent{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+    justify-content: space-between;
+}
+.heroContent h1{
+    font-size: 4rem;
+}
+.sub-text{
+    font-size: 2rem;
+    margin-top: 10px;
+    color: burlywood;
+}
+.sub-text a{
+    color:red;
 }
 
-.hero-text {
-    font-family: "Prompt", sans-serif;
+.more-info{
+    width: 100vw;
+    
+    background-color: black;
+  text-align: center;
+}
+.more-info-content {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.more-info-content h1 {
+    font-size: 6rem;
+}
+
+.more-info-content p {
+    font-size: 2rem;
+}
+.attraction{
+    font-weight: 5rem;
+
+}
+.attracts h1 {
+    color: grey;
     font-size: 5rem;
-    text-align: center;
-    margin-bottom: 20px;
 }
 
-.hero-img {
+.attracts h2 {
+    color: grey;
+    font-size: 5rem; 
+}
+
+.attracts h3 {
+    font-size: 5rem;
+    color: grey;
+    
+}
+.attracts p {
+    font-size: 2rem;
+    color: burlywood ;
+}
+.attracts img{
+    width: 60%;
+    height: 60%;
+}
+.attracts a{
+    color: orangered;
+}
+
+/* styling for fees.html */
+.fees{
+    margin-top: 80px;
+    height: 80vh;
+}
+.fees h1{
+    font-size: 8rem;
     text-align: center;
+}
+.fees p{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 10%;
+    
+}
+.fees a{
+    color: orangered;
+}
+
+.basic h1, .basic h2, .basic h3, .basic h4, .basic h5 {
+    font-size: 3rem;
+    color: #d0cdcd;
+    margin-bottom: 10px;
+  }
+  .basic p{
+    font-size: 1.8rem;
+    color: #7ea8bd;
+    margin-left: 20px;
+  }
+  .plans {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 10%;
 }
 
 .sub-text {
-    font-family: "Prompt", sans-serif;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-top: 20px;
+
+    padding: 20px;
+
 }
 
-.index-content {
-    width: 100vw;
-    height: 100vh;
-    background-color: gray;
+.image-container {
+    
+    display: flex;
+    justify-content: center; 
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    width: 80%;
+    height: 80%;
+}
+
+.fee-structure{
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+}
+#offer{
+    text-align: center;
+    color: #d0cdcd;
+}
+.still-unsure{
+    font-size: 2rem;
+    color: silver;
+    margin-top: 10%;
+}
+.still-unsure a{
+    color: orangered;
 }
