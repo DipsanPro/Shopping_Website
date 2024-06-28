@@ -1,206 +1,169 @@
-@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
-    font-family: "Francois One", sans-serif;
-    background-color: rgb(14, 12, 12);
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: black;
     color: white;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
 }
-.header{
+
+.header {
     font-family: "Oswald", sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    height: 80px;
+    height: 12vh;
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 1000; 
-    background-color: rgb(29, 29, 29);
-
-    
+    z-index: 1000;
+    background-color: black;
 }
-.navigation-bar{
+
+.navigation-bar {
     display: flex;
     gap: 40px;
     font-size: 1.5rem;
     font-weight: bold;
 }
-.logo{
-    font-weight: bold;
-    font-size: 2.5rem;
-    border:5px solid white;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    
+
+.logo img {
+    max-height: 60px;
 }
 
-/* Main Content Styling */
-.mainContent{
-    font-family: "Oswald", sans-serif;
-    font-weight: bold;
-    margin-top: 80px;
-    border: 3px solid orangered;
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
-    margin-top: 10%;
-    
-
-}
-.heroContent img{
-    width: 30%;
-    height: 30%;
-}
-.heroContent h1{
-    margin-top: 8%;
-}
-.heroContent{
+.main-section {
+    position: relative;
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
-}
-.heroContent h1{
-    font-size: 4rem;
-}
-.sub-text{
-    font-size: 2rem;
-    margin-top: 10px;
-    color: burlywood;
-}
-.sub-text a{
-    color:red;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.more-info{
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/image.webp);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    
+}
+.Welcome{
     width: 100vw;
-    
-    background-color: black;
-  text-align: center;
-}
-.more-info-content {
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.more-info-content h1 {
-    font-size: 6rem;
-}
-
-.more-info-content p {
-    font-size: 2rem;
-}
-.attraction{
-    font-weight: 5rem;
-
-}
-.attracts h1 {
-    color: grey;
-    font-size: 5rem;
-}
-
-.attracts h2 {
-    color: grey;
-    font-size: 5rem; 
-}
-
-.attracts h3 {
-    font-size: 5rem;
-    color: grey;
-    
-}
-.attracts p {
-    font-size: 2rem;
-    color: burlywood ;
-}
-.attracts img{
-    width: 60%;
-    height: 60%;
-}
-.attracts a{
-    color: orangered;
-}
-
-/* styling for fees.html */
-.fees{
-    margin-top: 80px;
-    height: 80vh;
-}
-.fees h1{
-    font-size: 8rem;
+    height: 100vh;
     text-align: center;
 }
-.fees p{
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 10%;
-    
-}
-.fees a{
-    color: orangered;
-}
-
-.basic h1, .basic h2, .basic h3, .basic h4, .basic h5 {
-    font-size: 3rem;
-    color: #d0cdcd;
-    margin-bottom: 10px;
-  }
-  .basic p{
-    font-size: 1.8rem;
-    color: #7ea8bd;
-    margin-left: 20px;
-  }
-  .plans {
-    display: flex;
-    justify-content: space-between; 
-    margin-top: 10%;
-}
-
-.sub-text {
-
-    padding: 20px;
-
-}
-
-.image-container {
-    
-    display: flex;
-    justify-content: center; 
-}
-
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    width: 80%;
-    height: 80%;
-}
-
-.fee-structure{
-    text-align: center;
+.Welcome h1{
     font-size: 5rem;
+}
+.Welcome p{
+    font-size: 2rem  ;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.main-section h1 {
+    font-size: 5rem;
+    z-index: 1;
     color: white;
 }
-#offer{
+
+
+.feature {
+    width: 100vw;
+    height: auto;
+}
+.feature h1, h2, h3{
     text-align: center;
-    color: #d0cdcd;
+    font-size: 4rem;
+    color: white;
+    margin-top: 30px;
 }
-.still-unsure{
+.feature p{
+    text-align: center;
     font-size: 2rem;
-    color: silver;
-    margin-top: 10%;
+    color: white;
+    margin-top: 15px;
 }
-.still-unsure a{
+.btn{
+    text-align: center;
+}
+button{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 24px;
+    background-color: orangered;
+    border: none;
+}
+
+.facilities{
+    text-transform: capitalize;
+}
+.facilities a{
+    color: orangered;
+    border: 2px solid red;
+    padding: 5px;
+    font-size: 1rem;
+}
+.slider-container{
+    padding: 2rem;
+}
+.slider{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+.slide-images{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem --0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+
+}
+.slider-images img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+#offer{
+    
+    width: 100vw;
+    height: 100vh;
+}
+#offer h1{
+    text-align: center;
+    font-size: 5rem;
+    text-transform: capitalize;
     color: orangered;
 }
+#offer p{
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align:left;
+    margin-top: 40px;
+}
+#offer span{
+    color: orangered;
+}
+
+

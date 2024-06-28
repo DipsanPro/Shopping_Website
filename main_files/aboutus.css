@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 12vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: black;
+}
+
+.navigation-bar {
+    display: flex;
+    gap: 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo img {
+    max-height: 60px;
+}
+
+.main-section {
+    position: relative;
+    height: auto;
+    margin-top: 12vh;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.main-section h1{
+    font-size: 7rem;
+}
+.main-section p{
+    font-size: 2rem;
+
+}
+button{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 24px;
+    background-color: orangered;
+    border: none;
+}
+
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/about-us-img/muscle-modified.webp);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    
+}
+
+.Team{
+    text-align: center;
+
+}
+.Team h1{
+    font-size: 5rem;
+}
+.Team p {
+    font-size: 2rem;
+}
+.trainer1{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+.trainer1 img{
+    width: 100vh;
+    height: 70vh;
+    border-radius: 20px;
+}
+.trainer1 p{
+    font-size: 3rem;
+}
+
+.trainer2{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+.trainer2 img{
+    width: 100vh;
+    height: 70vh;
+    border-radius: 20px;
+}
+.trainer2 p{
+    font-size: 3rem;
+}
+.choose-us{
+    height: 100vh;
+    width: 100vw;
+    margin-top: 50px;
+}
+.choose-us h1{
+    font-size: 5rem;
+    text-align: center;
+}
+.choose-us p{
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 50px;
+}
+.choose-us span{
+    color: orangered;
+    font-size: 2.5rem;
+
+}
