@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACT US || BOOK A TRIAL</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/main_files/css-files/contactus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!--USED TO IMPORT ICONS-->
+
 </head>
 <body>
-    <header class="header">
+    <<header class="header">
         <div class="logo">
             <a href="index.html"><img src="/images/logo.png" alt="ULC Logo"></a>
         </div>
@@ -17,8 +19,75 @@
             <a href="shop.html">SHOP</a>
             <a href="contactus.html">CONTACT US</a>
         </nav>
-    <section class="contact-form">contact forum</section>
-    <section class="contact-real-owners"></section>
-    <section class="contact-dev"></section>
+    </header>
+    <section class="contact-form"><h1>Contact Forum</h1>
+        <hr class="line">
+        <form action="#">
+            <label for="fname">Enter Your First Name:</label>
+            <input type="text" name="firstname" id="fname">
+            <label for="lname">Enter Your Last Name:</label>
+            <input type="text" name="lastname" id="lname"><br>
+            <label for="numb" aria-required="true">Enter Your Number:</label>
+            <input type="text" name="number" id="numb">
+            <label for="email" required>Enter Your Mail:</label>
+            
+                <input type="email" name="mail" id="email">
+                <div class="drop-down"></div>
+            <select name="programme" id="">
+                <option>Choose Your Plan</option>
+                <option value="1">Basic</option>
+                <option value="2">Advance</option>
+                <option value="3">VIP</option>
+                <option value="4">Special</option>
+              </select>
+            </div><br>
+            <button>SUBMIT</button>
+        </form>
+        <div class="map">
+            <H1>LOCATION</H1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28261.37635717731!2d85.29391384552254!3d27.69652937475806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1953c42080cd%3A0x73f1d1dbe7eb22f9!2sUltimate%20Lifting%20Club!5e0!3m2!1sen!2snp!4v1719575585693!5m2!1sen!2snp" width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section class="contact-real-owners">
+        <h1>CONTACT ORIGINAL GYM OWNERS</h1>
+        <hr class="line1">
+        <a href="https://www.instagram.com/ultimate_lifting_club/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/ultimateliftingclub/" target="_blank"><i class="fa-brands fa-facebook"></i></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-threads"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <div class="number"><h1 class="ph-no">
+            Lorem: 98150851331
+        </h1>
+        <h1 class="ph-no">
+            Lorem: 98150851331
+        </h1>
+        <h1 class="ph-no">
+            Lorem: 98150851331
+        </h1>
+    </section>
+    <section class="contact-dev">
+        <H1>About Dev</H1>
+        <p>I'm a computing student navigating thehellscape of code and
+            algorithms, and I'm now in the middle of assignments, 
+            coffee overeating, and debugging nightmares. My days are spent 
+            dealing with semicolons, while my nights are spent dreaming in binary.
+             With an eye for converting coffee into code, 
+            I'm always on the lookout for the next challenge to tackle. 
+            When I'm not cursing my compiler, you can find me exploring into the 
+            darkest reaches of the internet, looking for solutions and staying ahead
+            of the curve in this ever-changing technological world.</p>
+        <h1>Contact Developer</h1>
+        <hr class="line2">
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-github"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-discord"></i></a>
+        
+        
+    </section>
 </body>
 </html>

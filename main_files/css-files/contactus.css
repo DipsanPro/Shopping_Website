@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 12vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: black;
+}
+
+.navigation-bar {
+    display: flex;
+    gap: 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo img {
+    max-height: 60px;
+}
+
+.contact-form{
+    margin-top: 12vh; 
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 150vh;
+    width: 100vw ;
+}
+.contact-form h1{
+    font-size: 4rem;
+}
+
+.contact-form form>button{
+    width: 10%;
+    height: 4%;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    height: 10%;
+    font-weight: bold;
+    background-color: orangered;
+
+}
+
+.line{
+    width: 30%;
+height: 3px;
+    margin-left: 35%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+input{
+    height: 1.5rem;
+   
+    margin-right: 5%;
+    margin-bottom: 2%;
+    font-size: 1rem;
+    
+}
+select{
+    width: 15rem;
+    height: 3;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+}   
+
+.map{
+    margin-top: 20px;
+}
+
+
+
+.contact-real-owners {
+    font-size: 3rem;
+    text-align: center;
+    height: 100vh;
+}
+.line1{
+    width: 80%;
+    height: 3px;
+        margin-left: 10%;
+
+        margin-top: 2%;
+        margin-bottom: 3%;
+}
+.contact-real-owners a{
+    margin-right: 5%;
+
+}
+.ph-no{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left  ;
+    margin-left: 10%;
+    
+}
+.number{
+    margin-top: 5%;
+}
+.contact-dev{
+    font-size: 3rem;
+    text-align: center;
+    height: 100vh; 
+}
+.line2{
+    width: 50%;
+    height: 3px;
+        margin-left: 25%;
+
+        margin-top: 2%;
+        margin-bottom: 3%;
+}
+.contact-dev a{
+    margin-right: 5%;
+
+}
+.contact-dev p{
+    font-size: 1.5rem;
+    margin: 5%;
+}

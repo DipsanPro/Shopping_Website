@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: black;
+    color: white;
+    font-weight: bold ;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 12vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: transparent;
+}
+
+.navigation-bar {
+    display: flex;
+    gap: 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo img {
+    max-height: 60px;
+}
+
+.packages{
+    margin-top: 12vh;
+}
+.welcome{
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 30px;
+
+}
+.welcome h1,h2{
+    font-size: 4rem;
+    margin-top: 5%;
+    color: aqua;
+}
+.welcome button{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 12px 30px;
+    background-color: orangered;
+    border: none;
+
+    width: 200px;
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+}
+.welcome p{
+    font-size: 2rem;
+    margin-top: 5%;
+}
+.plans{
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 30px;
+
+}
+.basic{
+    width: 100vw;
+    height: 100vh;
+}
+.basic h1{
+    font-size: 5rem;
+    margin-top: 5%;
+
+}
+.basic p{
+    font-size: 2rem;
+    margin-top: 2%;
+    text-align: left;
+}
+.basic span{
+    color: orangered;
+    font-size: 2.5rem;
+}
+.premium{
+    width: 100vw;
+    height: 100vh;
+}
+.premium h1{
+    font-size: 5rem;
+    margin-top: 5%;
+
+}
+.premium p{
+    font-size: 2rem;
+    margin-top: 2%;
+    text-align: left;
+}
+.premium span{
+    color: orangered;
+    font-size: 2.5rem;
+}
+.vip{
+    width: 100vw;
+    height: 100vh;
+}
+.vip h1{
+    font-size: 5rem;
+    margin-top: 5%;
+
+}
+.vip p{
+    font-size: 2rem;
+    margin-top: 2%;
+    text-align: left;
+}
+.vip span{
+    color: orangered;
+    font-size: 2.5rem;
+}
+.special{
+    width: 100vw;
+    height: auto;
+}
+.special h1,h4{
+    font-size: 5rem;
+    margin-top: 5%;
+
+}
+.special h2, h3, h5, h6{
+    font-size: 2.5rem;
+    color: antiquewhite;
+}
+.special p{
+    font-size: 2rem;
+    margin-top: 2%;
+    text-align: left;
+
+}
+.special span{
+    color: orangered;
+    font-size: 2.5rem;
+}
+.trial{
+    width: 100vw;
+    height: 100vh;
+}
+.trial h1{
+    font-size: 5rem;
+    margin-top: 5%;
+
+}
+.trial p{
+    font-size: 2rem;
+    margin-top: 2%;
+    text-align: left;
+}
+.trial span{
+    color: orangered;
+    font-size: 2.5rem;
+}
+.trial p>button{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 24px;
+    background-color: orangered;
+    border: none;
+}
