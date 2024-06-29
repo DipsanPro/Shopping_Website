@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACT US || BOOK A TRIAL</title>
     <link rel="stylesheet" href="/main_files/css-files/contactus.css">
+    <link rel="icon" type="image/x-icon" href="/images/logog.png">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!--USED TO IMPORT ICONS-->
 
 </head>
 <body>
     <<header class="header">
         <div class="logo">
-            <a href="index.html"><img src="/images/logo.png" alt="ULC Logo"></a>
+            <a href="index.html"><img src="/images/logog.png" alt="ULC Logo"></a>
         </div>
         <nav class="navigation-bar">
             <a href="aboutus.html">ABOUT US</a>
             <a href="packages.html">PACKAGES</a>
             <a href="shop.html">SHOP</a>
-            <a href="contactus.html">CONTACT US</a>
         </nav>
     </header>
     <section class="contact-form"><h1>Contact Forum</h1>
@@ -89,5 +90,61 @@
         
         
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const emailInput = document.getElementById('email');
+
+    emailInput.addEventListener('blur', function() {
+        const email = emailInput.value.trim();
+        if (email !== '' && !email.endsWith('@gmail.com')) {
+            alert('Please enter a valid email ending with @gmail.com');
+            emailInput.focus();
+        }
+    });
+});
+    </script>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <h3>About ULC</h3>
+                    <p>The Ultimate Lifting Club (ULC) is dedicated to providing top-notch fitness facilities and a supportive community to help you achieve your fitness goals. Join us and become part of the ULC family!</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="#welcome">Welcome</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: <a href="mailto:info@ulc.com">info@ulc.com</a></p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: 123 Fitness Ave, Workout City, WC 12345</p>
+                    <div class="socials">
+                        <a href="https://www.facebook.com/ultimateliftingclub/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/ultimate_lifting_club/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section developer">
+                    <h3>Developer Info</h3>
+                    <p>Connect with the developer:</p>
+                    <div class="socials">
+                        <a href="https://instagram.com/dipsan100" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/DipsanPro" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://discord.com/" target="_blank"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ultimate Lifting Club. All rights reserved.</p>
+            </div>
+        </footer>
 </body>
 </html>

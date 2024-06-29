@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,18 +8,19 @@
 
 body {
     font-family: "Roboto Condensed", sans-serif;
-    background-color: black;
+    background-color: rgb(12, 10, 10);
     color: white;
-    font-weight: bold ;
+    font-weight: bold;
+    line-height: 1.6;
 }
 
 a {
     text-decoration: none;
     color: white;
+    position: relative;
 }
 
 .header {
-    font-family: "Oswald", sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +30,7 @@ a {
     position: fixed;
     top: 0;
     z-index: 1000;
-    background-color: transparent;
+    background-color: black;
 }
 
 .navigation-bar {
@@ -40,26 +40,52 @@ a {
     font-weight: bold;
 }
 
+.navigation-bar a {
+    position: relative;
+}
+
+.navigation-bar a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: orangered;
+    transition: width 0.3s ease;
+}
+
+.navigation-bar a:hover::after {
+    width: 100%;
+}
+
 .logo img {
     max-height: 60px;
 }
 
-.packages{
+.packages {
     margin-top: 12vh;
+    padding: 20px;
 }
-.welcome{
+
+.welcome {
     text-align: center;
     width: 100vw;
     height: 100vh;
     margin-top: 30px;
-
 }
-.welcome h1,h2{
+.welcome p{
+    font-size: 1.5rem;
+}
+
+.welcome h1,
+.welcome h2 {
     font-size: 4rem;
     margin-top: 5%;
-    color: aqua;
+    color: rgb(139, 160, 160);
 }
-.welcome button{
+
+.welcome button {
     text-align: center;
     margin-top: 5%;
     font-size: 1.5rem;
@@ -67,125 +93,181 @@ a {
     padding: 12px 30px;
     background-color: orangered;
     border: none;
-
     width: 200px;
 }
-.btn{
+
+.btn {
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
 }
-.welcome p{
-    font-size: 2rem;
-    margin-top: 5%;
+
+.btn button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
-.plans{
-    text-align: center;
-    width: 100vw;
-    height: 100vh;
+
+.btn button:hover {
+    background-color: orangered;
+    border-color: orangered;
+}
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin-top: 30px;
+}
 
+.basic,
+.premium,
+.vip,
+.special,
+.trial {
+    width: 45%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    border-radius: 10px;
 }
-.basic{
-    width: 100vw;
-    height: 100vh;
-}
-.basic h1{
-    font-size: 5rem;
-    margin-top: 5%;
 
+.basic h1,
+.premium h1,
+.vip h1,
+.special h1,
+.trial h1 {
+    font-size: 3rem;
+    margin-top: 20px;
+    color: white;
 }
-.basic p{
-    font-size: 2rem;
-    margin-top: 2%;
-    text-align: left;
+
+.basic p,
+.premium p,
+.vip p,
+.special p,
+.trial p {
+    font-size: 1.6rem;
+    color: white;
+    margin-top: 10px;
+    line-height: 1.6;
 }
-.basic span{
+
+.basic span,
+.premium span,
+.vip span,
+.special span,
+.trial span {
     color: orangered;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
 }
-.premium{
-    width: 100vw;
-    height: 100vh;
-}
-.premium h1{
-    font-size: 5rem;
-    margin-top: 5%;
 
-}
-.premium p{
-    font-size: 2rem;
-    margin-top: 2%;
-    text-align: left;
-}
-.premium span{
-    color: orangered;
-    font-size: 2.5rem;
-}
-.vip{
-    width: 100vw;
-    height: 100vh;
-}
-.vip h1{
-    font-size: 5rem;
-    margin-top: 5%;
-
-}
-.vip p{
-    font-size: 2rem;
-    margin-top: 2%;
-    text-align: left;
-}
-.vip span{
-    color: orangered;
-    font-size: 2.5rem;
-}
-.special{
-    width: 100vw;
-    height: auto;
-}
-.special h1,h4{
-    font-size: 5rem;
-    margin-top: 5%;
-
-}
-.special h2, h3, h5, h6{
-    font-size: 2.5rem;
+.special h2,
+.special h3,
+.special h4,
+.special h5,
+.special h6 {
     color: antiquewhite;
+    font-size: 1.8rem;
+    margin-top: 15px;
 }
-.special p{
-    font-size: 2rem;
-    margin-top: 2%;
-    text-align: left;
 
+.special p {
+    margin-top: 5px;
 }
-.special span{
-    color: orangered;
-    font-size: 2.5rem;
-}
-.trial{
-    width: 100vw;
-    height: 100vh;
-}
-.trial h1{
-    font-size: 5rem;
-    margin-top: 5%;
-
-}
-.trial p{
-    font-size: 2rem;
-    margin-top: 2%;
-    text-align: left;
-}
-.trial span{
-    color: orangered;
-    font-size: 2.5rem;
-}
-.trial p>button{
+.trial button {
     text-align: center;
     margin-top: 20px;
     font-size: 1rem;
     font-weight: bold;
-    padding: 12px 24px;
+    padding: 10px 20px;
     background-color: orangered;
     border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.trial button a {
+    color: white;
+    text-decoration: none;
+}
+
+.trial button:hover {
+    background-color: rgb(255, 69, 0); /* Adjusted shade of orange for hover */
+}
+.footer {
+    background-color: #111;
+    color: #ddd;
+    padding: 40px 0;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px 20px;
+    min-width: 220px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    color: #ff5733; /* Orange-red color for headings */
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #ff5733; /* Orange-red color for links */
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section .socials a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #ff5733; /* Orange-red color for icons */
+    font-size: 24px;
+}
+
+.footer-section .socials a:hover {
+    color: #fff; /* Change color on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #888;
 }

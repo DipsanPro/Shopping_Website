@@ -3,55 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHOP</title>
+    <title>SHOP - Ultimate Lifting Club</title>
     <link rel="stylesheet" href="css-files/shop.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!--USED TO IMPORT ICONS-->
+    <link rel="icon" type="image/x-icon" href="/images/logog.png">
+    <link rel="icon" type="image/x-icon" href="/images/logog.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!-- Importing icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet"> <!-- Importing Google Fonts -->
 </head>
 <body>
     <header class="header">
         <div class="logo">
-            <a href="index.html"><img src="/images/logo.png" alt="ULC Logo"></a>
+            <a href="index.html"><img src="/images/logog.png" alt="ULC Logo"></a>
         </div>
         <nav class="navigation-bar">
             <a href="aboutus.html">ABOUT US</a>
             <a href="packages.html">PACKAGES</a>
-            <a href="shop.html">SHOP</a>
             <a href="contactus.html">CONTACT US</a>
         </nav>
     </header>
-<section class="top">
-    <div class="top-1">
-        <h1>Bodybuilding Supplements and Powerlifting Accessories</h1>
-    </div>
-    <div class="section">
-        <div class="top-2">
-            <div class="content">
-                <div class="filter-side">
-                    <i class="fas fa-filter"> Filters</i> 
-                    
-                    <div class="price-box">
-                        <input type="text" name="min-price" id="mp" placeholder="Min Price">
-                        <span>-</span>
-                        <input type="text" name="max-price" id="mac-p" placeholder="Max Price">
+
+    <main>
+        <section class="top">
+            <div class="top-1">
+                <h1>Bodybuilding Supplements and Powerlifting Accessories</h1>
+            </div>
+            <div class="section">
+                <div class="top-2">
+                    <div class="content">
+                        <div class="filter-side">
+                            <i class="fas fa-filter"></i> Filters
+                            <div class="price-box">
+                                <input type="text" name="min-price" id="min-price" placeholder="Min Price">
+                                <span>-</span>
+                                <input type="text" name="max-price" id="max-price" placeholder="Max Price">
+                            </div>
+                            <p>Sort by</p>
+                            <p>Categories</p>
+                            <p>Discount</p>
+                            <p>Ratings</p>
+                            <p>Offers</p>
+                        </div>
+                        <div class="products">
+                            <div class="product">
+                                <span class="product-name">Product 1</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                            <div class="product">
+                                <span class="product-name">Product 2</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                            <div class="product">
+                                <span class="product-name">Product 3</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                            <div class="product">
+                                <span class="product-name">Product 4</span>
+                                <button class="btn-buy">Buy Now</button>
+                            </div>
+                        </div>
                     </div>
-                    <p>Sort by</p>
-                    <p>Categories</p>
-                    <p>Discount</p>
-                    <p>Ratings</p>
-                    <p>Offers</p>
                 </div>
-                <div class="products">
-                    <div class="product"></div>
-                    <div class="product">Product 2</div>
-                    <div class="product">Product 3</div>
-                    <div class="product">Product 4</div>
-                    <button class="btn">LOAD MORE</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>About ULC</h3>
+                <p>The Ultimate Lifting Club (ULC) is dedicated to providing top-notch fitness facilities and a supportive community to help you achieve your fitness goals. Join us and become part of the ULC family!</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="#welcome">Welcome</a></li>
+                    <li><a href="#facilities">Facilities</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:info@ulc.com">info@ulc.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Fitness Ave, Workout City, WC 12345</p>
+                <div class="socials">
+                    <a href="https://www.facebook.com/ultimateliftingclub/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ultimate_lifting_club/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section developer">
+                <h3>Developer Info</h3>
+                <p>Connect with the developer:</p>
+                <div class="socials">
+                    <a href="https://instagram.com/dipsan100" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/DipsanPro" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://discord.com/" target="_blank"><i class="fab fa-discord"></i></a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ultimate Lifting Club. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="shop.js" defer></script> <!-- Adding JavaScript for functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buyButtons = document.querySelectorAll('.btn-buy');
 
-
+            buyButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    alert("This product is currently not available."); // Replace with your desired functionality
+                });
+            });
+        });
+    </script>
 </body>
 </html>

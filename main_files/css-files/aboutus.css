@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,15 +11,16 @@ body {
     background-color: black;
     color: white;
     font-weight: bold;
+    line-height: 1.6;
 }
 
 a {
     text-decoration: none;
     color: white;
+    position: relative;
 }
 
 .header {
-    font-family: "Oswald", sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,104 +40,184 @@ a {
     font-weight: bold;
 }
 
+.navigation-bar a {
+    position: relative;
+}
+
+.navigation-bar a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: orangered;
+    transition: width 0.3s ease;
+}
+
+.navigation-bar a:hover::after {
+    width: 100%;
+}
+
 .logo img {
     max-height: 60px;
 }
 
-.main-section {
-    position: relative;
-    height: auto;
-    margin-top: 12vh;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+.about-section {
+    padding: 80px 20px;
     text-align: center;
-}
-.main-section h1{
-    font-size: 7rem;
-}
-.main-section p{
-    font-size: 2rem;
-
-}
-button{
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 12px 24px;
-    background-color: orangered;
-    border: none;
-}
-
-
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(/images/about-us-img/muscle-modified.webp);
+    background-image: url(/images/about-us-img/bg.jpg);
     background-size: cover;
     background-position: center;
-    z-index: -1;
-    
-}
-
-.Team{
-    text-align: center;
-    background-color: rgb(10, 9, 9);
-
-}
-.Team h1{
-    font-size: 5rem;
-}
-.Team p {
-    font-size: 2rem;
-}
-.trainer1{
-    display: flex;
-    justify-content: space-between;
-    margin: 40px;
-}
-.trainer1 img{
-    width: 100vh;
-    height: 70vh;
-    border-radius: 20px;
-}
-.trainer1 p{
-    font-size: 3rem;
-}
-
-.trainer2{
-    display: flex;
-    justify-content: space-between;
-    margin: 40px;
-}
-.trainer2 img{
-    width: 100vh;
-    height: 70vh;
-    border-radius: 20px;
-}
-.trainer2 p{
-    font-size: 3rem;
-}
-.choose-us{
     height: 100vh;
-    width: 100vw;
-    margin-top: 50px;
 }
-.choose-us h1{
-    font-size: 5rem;
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.coach {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    color: white;
+    height: auto;
+}
+
+.coach h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.coach .coach-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.coach .coach-item {
+    width: 45%; /* Adjust width as needed */
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    text-align: left; /* Text aligned left */
+    border: 4px solid #eb4224; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the border */
+}
+
+.coach .coach-item .coach-info {
+    width: 50%; /* Adjust text width */
+    padding: 20px;
+}
+
+.coach .coach-item .coach-info h2 {
+    margin-top: 10px;
+    color: white;
+}
+
+.coach .coach-item .coach-info p {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.coach .coach-item .coach-image {
+    width: 50%; /* Adjust image width */
     text-align: center;
 }
-.choose-us p{
-    font-size: 2rem;
-    text-align: left;
-    margin-top: 50px;
-}
-.choose-us span{
-    color: orangered;
-    font-size: 2.5rem;
 
+.coach .coach-item img {
+    width: 90%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.coach .coach-item:hover img {
+    transform: scale(1.1);
+}
+.footer {
+    background-color: #111;
+    color: #ddd;
+    padding: 40px 0;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px 20px;
+    min-width: 220px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    color: #ff5733; /* Orange-red color for headings */
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #ff5733; /* Orange-red color for links */
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section .socials a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #ff5733; /* Orange-red color for icons */
+    font-size: 24px;
+}
+
+.footer-section .socials a:hover {
+    color: #fff; /* Change color on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #888;
 }

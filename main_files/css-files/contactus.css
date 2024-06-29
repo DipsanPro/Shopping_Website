@@ -16,10 +16,10 @@ body {
 a {
     text-decoration: none;
     color: white;
+    position: relative;
 }
 
 .header {
-    font-family: "Oswald", sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,6 +37,25 @@ a {
     gap: 40px;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.navigation-bar a {
+    position: relative;
+}
+
+.navigation-bar a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: orangered;
+    transition: width 0.3s ease;
+}
+
+.navigation-bar a:hover::after {
+    width: 100%;
 }
 
 .logo img {
@@ -144,4 +163,75 @@ select{
 .contact-dev p{
     font-size: 1.5rem;
     margin: 5%;
+}
+.footer {
+    background-color: #111;
+    color: #ddd;
+    padding: 40px 0;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px 20px;
+    min-width: 220px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    color: #ff5733; /* Orange-red color for headings */
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #ff5733; /* Orange-red color for links */
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section .socials a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #ff5733; /* Orange-red color for icons */
+    font-size: 24px;
+}
+
+.footer-section .socials a:hover {
+    color: #fff; /* Change color on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #888;
 }

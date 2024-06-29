@@ -11,6 +11,8 @@ body {
     font-family: "Roboto Condensed", sans-serif;
     background-color: black;
     color: white;
+    font-weight: bold;
+    line-height: 1.6;
 }
 
 a {
@@ -32,11 +34,49 @@ a {
     background-color: black;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 12vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: black;
+}
+
 .navigation-bar {
     display: flex;
     gap: 40px;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.navigation-bar a {
+    position: relative;
+}
+
+.navigation-bar a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: orangered;
+    transition: width 0.3s ease;
+}
+
+.navigation-bar a:hover::after {
+    width: 100%;
 }
 
 .logo img {
@@ -50,6 +90,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 4rem;
 }
 
 .background {
@@ -62,108 +103,225 @@ a {
     background-size: cover;
     background-position: center;
     z-index: -1;
-    
 }
-.Welcome{
+
+.Welcome {
     width: 100vw;
     height: 100vh;
     text-align: center;
+    padding: 2rem;
+    background-color: #333; /* Dark background color */
 }
-.Welcome h1{
+
+.Welcome h1 {
     font-size: 5rem;
 }
-.Welcome p{
-    font-size: 2rem  ;
+
+.Welcome p {
+    font-size: 2rem;
     margin-top: 5%;
     margin-bottom: 5%;
 }
-.main-section h1 {
-    font-size: 5rem;
-    z-index: 1;
-    color: white;
-}
-
 
 .feature {
     width: 100vw;
     height: auto;
+    padding: 2rem;
+    background-color: #444; /* Dark background color */
 }
-.feature h1, h2, h3{
+
+.feature h2, .feature h3 {
     text-align: center;
     font-size: 4rem;
     color: white;
     margin-top: 30px;
 }
-.feature p{
+
+.feature p {
     text-align: center;
     font-size: 2rem;
     color: white;
     margin-top: 15px;
 }
-.btn{
-    text-align: center;
-}
-button{
+
+.btn {
     text-align: center;
     margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
     font-size: 1rem;
     font-weight: bold;
     padding: 12px 24px;
     background-color: orangered;
     border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.facilities{
-    text-transform: capitalize;
+button:hover {
+    background-color: #FF6347; /* Darker shade of orangered */
+    transform: scale(1.05); /* Scale up slightly on hover */
 }
-.facilities a{
-    color: orangered;
-    border: 2px solid red;
-    padding: 5px;
-    font-size: 1rem;
+
+.facilities {
+    width: 100%;
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #555; /* Dark background color */
+    color: white;
 }
-.slider-container{
+
+.facilities h2 {
+    font-size: 4rem;
+    margin-top: 30px;
+}
+
+.facilities p {
+    font-size: 2rem;
+    margin-top: 15px;
+}
+
+.slider-container {
     padding: 2rem;
 }
-.slider{
+
+.slider {
     position: relative;
     max-width: 48rem;
     margin: 0 auto;
 }
-.slide-images{
+
+.slide-images {
     display: flex;
     aspect-ratio: 16/9;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    box-shadow: 0 1.5rem 3rem --0.75rem hsla(0, 0%, 0%, 0.25);
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.25);
     border-radius: 0.5rem;
-
 }
-.slider-images img{
-    flex: 1 0 100%;
+
+.slide-images img {
+    flex: 0 0 auto;
     scroll-snap-align: start;
     object-fit: cover;
+    width: 100%;
+    height: auto;
+    margin-right: 1rem;
 }
-#offer{
-    
-    width: 100vw;
-    height: 100vh;
-}
-#offer h1{
+
+#offer {
+    width: 100%;
+    padding: 4rem 2rem;
     text-align: center;
-    font-size: 5rem;
-    text-transform: capitalize;
+    background-color: #666; /* Dark background color */
+    color: white;
+}
+
+#offer h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
     color: orangered;
 }
-#offer p{
+
+#offer p {
     font-size: 2rem;
-    text-transform: capitalize;
-    text-align:left;
-    margin-top: 40px;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
 }
-#offer span{
+
+#offer span {
+    font-weight: bold;
     color: orangered;
 }
 
+#offer button {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: orangered;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
+#offer button:hover {
+    background-color: #FF6347; /* Darker shade of orangered */
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+.footer {
+    background-color: #111;
+    color: #ddd;
+    padding: 40px 0;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px 20px;
+    min-width: 220px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    color: #ff5733; /* Orange-red color for headings */
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #ff5733; /* Orange-red color for links */
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section .socials a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #ff5733; /* Orange-red color for icons */
+    font-size: 24px;
+}
+
+.footer-section .socials a:hover {
+    color: #fff; /* Change color on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #888;
+}
